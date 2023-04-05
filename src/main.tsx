@@ -7,6 +7,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 const App = loadable(() => import('./App'));
 const Home = loadable(() => import('./routes'));
 const Projects = loadable(() => import('./routes/projects'));
+const Stack = loadable(() => import('./routes/stack'));
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: '/projects',
     element: <Projects />,
+  },
+  {
+    path: '/stack',
+    element: <Stack />,
   },
   {
     path: '*',
