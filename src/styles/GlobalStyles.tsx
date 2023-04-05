@@ -24,6 +24,7 @@ export const GlobalStyles = () => {
           margin: 0;
           padding: 0;
           box-sizing: border-box;
+          font-family: 'Inter', Helvetica, Arial, sans-serif;
 
           /* Add animation to all colors */
           transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
