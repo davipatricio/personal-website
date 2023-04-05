@@ -20,7 +20,7 @@ export default function ProjectContent() {
             <ProjectCard
               key={project.repository}
               repository={project.repository}
-              description={project.description}
+              description={data.description ?? ''}
               language={project.language}
               languageColor={project.languageColor}
               stars={data.stargazers_count}

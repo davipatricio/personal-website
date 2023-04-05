@@ -8,7 +8,7 @@ export const Container = styled.main`
 
   margin-top: 50px;
   padding-bottom: 50px;
-  
+
   /* Navbar & footer have 70px of height */
   min-height: calc(100vh - 70px - 70px);
 
@@ -30,12 +30,16 @@ export const Container = styled.main`
 
 export const ProjectContainer = styled.section`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 24px;
   align-items: flex-start;
   justify-content: center;
 
   margin-top: 10px;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+  }
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
