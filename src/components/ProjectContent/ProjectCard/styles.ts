@@ -52,30 +52,17 @@ interface CardFooterProps {
 }
 
 export const CardFooter = styled.footer<CardFooterProps>`
-  &,
-  > div {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  & {
-    gap: 30px;
-  }
+  display: flex;
+  align-items: center;
+  gap: 10px;
 
   // Language info (color, name)
-  .language span.languageColor {
+  span.languageColor {
     display: inline-block;
 
     background-color: ${({ languageColor }) => languageColor};
     border-radius: 50%;
     height: 20px;
     width: 20px;
-  }
-
-  // Stars info
-  .stars svg,
-  .stars span {
-    color: ${({ theme }) => theme.text.secondary};
   }
 `;

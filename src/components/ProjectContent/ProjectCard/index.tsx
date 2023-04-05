@@ -1,14 +1,12 @@
 import { MdBookmarks } from 'react-icons/md';
-import { CardContainer, CardContent, CardFooter, CardHeader } from './styles';
 import { Link } from 'react-router-dom';
-import { AiFillStar } from 'react-icons/ai';
+import { CardContainer, CardContent, CardFooter, CardHeader } from './styles';
 
 export interface ProjectCardProps {
   repository: string;
   description: string;
   language: string;
   languageColor: string;
-  stars: number;
 }
 
 export default function ProjectCard({
@@ -16,7 +14,6 @@ export default function ProjectCard({
   description,
   language,
   languageColor,
-  stars,
 }: ProjectCardProps) {
   const repositoryLink = repository.includes('/')
     ? repository
@@ -32,15 +29,8 @@ export default function ProjectCard({
       <CardContent>{description}</CardContent>
 
       <CardFooter languageColor={languageColor}>
-        <div className="language">
-          <span className="languageColor" />
-          <span>{language}</span>
-        </div>
-
-        <div className="stars">
-          <AiFillStar />
-          <span>{stars}</span>
-        </div>
+        <span className="languageColor" />
+        <span>{language}</span>
       </CardFooter>
     </CardContainer>
   );
