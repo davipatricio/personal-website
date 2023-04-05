@@ -12,8 +12,22 @@ export const Container = styled.header`
   height: 70px;
   width: 100%;
 
-  nav {
-    a {
+  > nav:first-child {
+    svg {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      svg {
+        display: block;
+      }
+
+      > a {
+        display: none;
+      }
+    }
+
+    > a {
       color: ${({ theme }) => theme.text.primary};
       text-decoration: none;
       font-family: 'JetBrains Mono', monospace, sans-serif;
@@ -25,7 +39,7 @@ export const Container = styled.header`
     }
 
     /* Set margin-left to 25px to all a but not the first */
-    a + a {
+    > a + a {
       margin-left: 25px;
     }
   }
