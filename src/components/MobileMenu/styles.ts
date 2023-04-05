@@ -12,13 +12,10 @@ export const Container = styled.nav`
   gap: 15px;
   padding: 30px 30px;
 
-  /* Set background to 1% white */
   background: rgba(255, 255, 255, 0.01);
-
-  /* Make background opaque blur */
   backdrop-filter: blur(10px);
 
-  height: calc(100vh - 70px);
+  height: calc(100vh - 120px);
   width: 100vw;
 
   > a {
