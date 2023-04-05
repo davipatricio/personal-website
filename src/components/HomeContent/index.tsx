@@ -9,9 +9,9 @@ export default function HomeContent() {
   return (
     <Container>
       <LeftContainer variation={theme}>
-        <h3>John Doe</h3>
+        <h3>Davi Patricio</h3>
         <h1>Full-Stack Developer</h1>
-        <p>Lorem impsum</p>
+        <p>Engeheiro de Software Pleno em São Paulo, Brasil.</p>
         <Link to="https://linkedin.com/in/davipatricio/">Contate-me</Link>
       </LeftContainer>
 

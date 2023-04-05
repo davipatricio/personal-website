@@ -10,7 +10,7 @@ const Icon = ({ icon, link }: { icon: React.ReactNode; link: string }) => (
 export default function Footer() {
   return (
     <Container>
-      <span>© 2023 John Doe. All rights reserved.</span>
+      <span>© 2023 Davi Patricio. All rights reserved.</span>
 
       <LinksContainer>
         <Icon icon={<AiFillGithub />} link="https://github.com/davipatricio" />
