@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const Container = styled.header`
+export const Container = styled.footer`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,6 +11,15 @@ export const Container = styled.header`
 
   height: 70px;
   width: 100%;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 20px;
+
+    & > span {
+      text-align: center;
+    }
+  }
 
   > span {
     color: ${({ theme }) => theme.text.primary};
