@@ -4,8 +4,15 @@ import { ThemeState } from '../../context/theme';
 export const Container = styled.main`
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 300px;
+  justify-content: space-around;
+
+  @media (max-width: 1024px) {
+    padding: 0 30px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 20px;
+  }
 
   /* Navbar & footer have 70px of height */
   height: calc(100vh - 70px - 70px);
@@ -49,6 +56,7 @@ export const LeftContainer = styled.div<LeftContainerProps>`
     color: ${({ theme }) => theme.text.primary};
     font-size: 3rem;
     user-select: none;
+    text-align: center;
   }
 
   > p {
@@ -56,6 +64,7 @@ export const LeftContainer = styled.div<LeftContainerProps>`
     font-size: 1.3rem;
 
     @media (max-width: 768px) {
+      text-align: center;
       margin-top: 10px;
     }
   }
@@ -83,5 +92,10 @@ export const RightContainer = styled.div`
     color: ${({ theme }) => theme.text.primary};
     height: 350px;
     width: 350px;
+
+    @media (max-width: 1024px) {
+      height: 300px;
+      width: 300px;
+    }
   }
 `;

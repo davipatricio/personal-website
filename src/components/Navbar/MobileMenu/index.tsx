@@ -5,8 +5,8 @@ export default function MobileMenu() {
   return (
     <Container>
       <Link to="/">Home</Link>
-      <Link to="/">Projects</Link>
-      <Link to="/">Stack</Link>
+      <Link to="/projects">Projects</Link>
+      <Link to="/stack">Stack</Link>
     </Container>
   );
 }

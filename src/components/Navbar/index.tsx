@@ -8,7 +8,7 @@ import {
   MdMenu,
 } from 'react-icons/md';
 import { useCallback, useState } from 'react';
-import MobileMenu from '../MobileMenu';
+import MobileMenu from './MobileMenu';
 import { Global } from '@emotion/react';
 
 export default function Navbar() {
@@ -30,8 +30,8 @@ export default function Navbar() {
     <Container>
       <nav>
         <Link to="/">Home</Link>
-        <Link to="/">Projects</Link>
-        <Link to="/">Stack</Link>
+        <Link to="/projects">Projects</Link>
+        <Link to="/stack">Stack</Link>
         <MenuIcon onClick={handleMenuToggle} />
       </nav>
 
