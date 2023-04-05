@@ -20,6 +20,10 @@ export const LeftContainer = styled.div<LeftContainerProps>`
   flex-direction: column;
   align-items: flex-start;
 
+  @media (max-width: 768px) {
+    align-items: center;
+  }
+
   > p,
   > a {
     font-family: 'JetBrains Mono', monospace, sans-serif;
@@ -34,6 +38,10 @@ export const LeftContainer = styled.div<LeftContainerProps>`
     background-clip: text;
     font-weight: 800;
     user-select: none;
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
   }
 
   > h3 {
