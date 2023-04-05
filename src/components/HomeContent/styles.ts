@@ -38,6 +38,7 @@ export const LeftContainer = styled.div<LeftContainerProps>`
     background-clip: text;
     font-weight: 800;
     user-select: none;
+    font-size: 2.5rem;
 
     @media (max-width: 768px) {
       text-align: center;
@@ -46,13 +47,17 @@ export const LeftContainer = styled.div<LeftContainerProps>`
 
   > h3 {
     color: ${({ theme }) => theme.text.primary};
-    font-size: 2rem;
+    font-size: 3rem;
     user-select: none;
   }
 
   > p {
     color: ${({ theme }) => theme.text.primary};
     font-size: 1.3rem;
+
+    @media (max-width: 768px) {
+      margin-top: 10px;
+    }
   }
 
   /* Contact me button */
@@ -63,7 +68,7 @@ export const LeftContainer = styled.div<LeftContainerProps>`
 
     padding: 10px 20px;
     border-radius: 50px;
-    margin-top: 30px;
+    margin-top: 20px;
 
     font-size: 1.3rem;
   }
