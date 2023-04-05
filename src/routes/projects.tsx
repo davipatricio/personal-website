@@ -1,6 +1,8 @@
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
-import ProjectContent from '../components/ProjectContent';
+import loadable from '@loadable/component';
+
+const Navbar = loadable(() => import('../components/Navbar'));
+const ProjectContent = loadable(() => import('../components/ProjectContent'));
+const Footer = loadable(() => import('../components/Footer'));
 
 export default function Projects() {
   return (

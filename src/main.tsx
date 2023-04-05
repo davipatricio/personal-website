@@ -1,9 +1,12 @@
+import loadable from '@loadable/component';
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import App from './App';
-import Home from './routes';
-import Projects from './routes/projects';
+
+const App = loadable(() => import('./App'));
+const Home = loadable(() => import('./routes'));
+const Projects = loadable(() => import('./routes/projects'));
 
 const router = createBrowserRouter([
   {
