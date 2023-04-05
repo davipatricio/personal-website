@@ -7,7 +7,8 @@ export const Container = styled.main`
   gap: 15px;
 
   margin-top: 50px;
-
+  padding-bottom: 50px;
+  
   /* Navbar & footer have 70px of height */
   min-height: calc(100vh - 70px - 70px);
 

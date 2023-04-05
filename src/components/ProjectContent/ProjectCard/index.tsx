@@ -3,7 +3,7 @@ import { CardContainer, CardContent, CardFooter, CardHeader } from './styles';
 import { Link } from 'react-router-dom';
 import { AiFillStar } from 'react-icons/ai';
 
-interface ProjectCardProps {
+export interface ProjectCardProps {
   repository: string;
   description: string;
   language: string;
