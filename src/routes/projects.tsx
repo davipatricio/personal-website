@@ -1,13 +1,13 @@
 import Footer from '../components/Footer';
-import HomeContent from '../components/HomeContent';
 import Navbar from '../components/Navbar';
+import ProjectContent from '../components/ProjectContent';
 
 export default function Projects() {
   return (
     <>
       <Navbar />
 
-      <HomeContent />
+      <ProjectContent />
 
       <Footer />
     </>
