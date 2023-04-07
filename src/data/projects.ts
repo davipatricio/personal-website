@@ -2,6 +2,12 @@ import { ProjectCardProps } from '../components/ProjectContent/ProjectCard';
 
 export const projects: ProjectCardProps[] = [
   {
+    repository: 'qrcode-generator',
+    language: 'TypeScript',
+    languageColor: '#2b7489',
+    description: 'A simple QRCode generator, made with QRCode.js and React.'
+  },
+  {
     repository: 'darcyinc/darcy',
     language: 'TypeScript',
     languageColor: '#2b7489',
