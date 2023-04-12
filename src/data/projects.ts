@@ -2,12 +2,6 @@ import { ProjectCardProps } from '../components/ProjectContent/ProjectCard';
 
 export const projects: ProjectCardProps[] = [
   {
-    repository: 'qrcode-generator',
-    language: 'TypeScript',
-    languageColor: '#2b7489',
-    description: 'A simple QRCode generator, made with QRCode.js and React.'
-  },
-  {
     repository: 'darcyinc/darcy',
     language: 'TypeScript',
     languageColor: '#2b7489',
@@ -18,6 +12,18 @@ export const projects: ProjectCardProps[] = [
     language: 'TypeScript',
     languageColor: '#2b7489',
     description: 'The API used at the Darcy social network. Powered by Prisma and fastify'
+  },
+  {
+     repository: 'upload-page-react',
+     language: 'TypeScript',
+     languageColor: '#2b7489',
+     description: 'Página de upload estática feita com React e styled-components.'
+  },
+  {
+    repository: 'qrcode-generator',
+    language: 'TypeScript',
+    languageColor: '#2b7489',
+    description: 'A simple QRCode generator, made with QRCode.js and React.'
   },
   {
     repository: 'denkybot',
