@@ -14,6 +14,12 @@ export const projects: ProjectCardProps[] = [
     description: 'The API used at the Darcy social network. Powered by Prisma and fastify'
   },
   {
+     repository: 'currency-tracker',
+     language: 'TypeScript',
+     languageColor: '#2b7489',
+     description: 'Veja a cotação de moedas e criptomoedas. Feito com React e styled-components.'
+  },
+  {
      repository: 'upload-page-react',
      language: 'TypeScript',
      languageColor: '#2b7489',
