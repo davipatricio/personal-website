@@ -55,4 +55,10 @@ export const projects: ProjectCardProps[] = [
     languageColor: '#2b7489',
     description: 'A simple & beautiful task organization made with TypeScript and React.'
   },
+  {
+    repository: 'form-challenge-next',
+    language: 'TypeScript',
+    languageColor: '#2b7489',
+    description: 'Um formulário minimalista com barra de progresso. Feito com Next.js e CSS Modules.'
+  }
 ];
