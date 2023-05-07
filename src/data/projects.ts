@@ -66,5 +66,11 @@ export const projects: ProjectCardProps[] = [
     language: 'TypeScript',
     languageColor: '#2b7489',
     description: 'Um formulário minimalista com barra de progresso. Feito com Next.js e CSS Modules.'
+  },
+  {
+    repository: 'multistep-form-next',
+    language: 'TypeScript',
+    languageColor: '#2b7489',
+    description: 'A simple multi step formulary made with TypeScript, Next.js and SCSS.'
   }
 ];
