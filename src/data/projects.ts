@@ -2,6 +2,12 @@ import { ProjectCardProps } from '../components/ProjectContent/ProjectCard';
 
 export const projects: ProjectCardProps[] = [
   {
+    repository: 'pomodoro-timer',
+    language: 'TypeScript',
+    languageColor: '#2b7489',
+    description: 'Gerencie seu tempo de forma mágica - Feito com React, styled-components e zustand.'
+  },
+  {
     repository: 'darcyinc/darcy',
     language: 'TypeScript',
     languageColor: '#2b7489',
